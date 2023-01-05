@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	font-family: "Roboto Slab", serif;
+	@apply bg-slate-900 text-slate-50;
+}
+html *:not([contenteditable="true"]) {
+	@apply select-none;
+}
+#app {
+	@apply flex min-h-screen flex-col;
+}
